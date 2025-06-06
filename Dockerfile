@@ -10,7 +10,9 @@ ARG CUDAVERSION=12.4
 # Pull from mambaforge and install XML and ssh
 FROM condaforge/mambaforge as base
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install -y libxml2 ssh
+RUN apt-get update && apt-get install -y libxml2 ssh \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Pull from base image and install OpenMPI/MPICH
 FROM base as mpi
