@@ -197,8 +197,18 @@ def rebin(a, *args, **kwargs):
 
 
 def _confine(A):
-    """\
-    Doc TODO.
+    """Wrap coordinate grids to stay within half the array size.
+
+    Parameters
+    ----------
+    A : ndarray
+        Array of coordinates with the first axis indexing dimensions.
+
+    Returns
+    -------
+    ndarray
+        Coordinates confined to ``[-shape[i]//2, shape[i]//2)`` along each
+        dimension.
     """
     sh = np.asarray(A.shape)[1:]
     A = A.astype(float)
