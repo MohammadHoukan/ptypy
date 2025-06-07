@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the following paper."
+title: PtyPy
+authors:
+  - family-names: Enders
+    given-names: B.
+  - family-names: Thibault
+    given-names: P.
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Enders
+      given-names: B.
+    - family-names: Thibault
+      given-names: P.
+  title: "A computational framework for ptychographic reconstructions"
+  journal: "Proceedings of the Royal Society A"
+  year: 2016
+  volume: 472
+  doi: 10.1098/rspa.2016.0640
