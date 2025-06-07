@@ -41,6 +41,7 @@ cupy-cuda12x = ["mpi4py","matplotlib","pyzmq","pillow", "pyfftw", "cupy-cuda12x"
 "ptypy.csv2cp" = "ptypy.cli.default_params:ptypy_csv2cp"
 "ptypy.run" = "ptypy.cli.run_script:ptypy_run"
 "ptypy.cli" = "ptypy.cli.command_line_interface:ptypy_run"
+"ptypy.gui" = "ptypy.gui.app:main"
 
 [project.urls]
 "Homepage" = "https://github.com/ptycho/ptypy"
